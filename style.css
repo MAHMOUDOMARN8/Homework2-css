@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:cursive;
+}
+.containr{
+    width: 110%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.925);
+
+}
+.logo{
+    color: white;
+    font-size: 32px;
+    /* margin-left: -50px */
+}
+span{
+    color:darkred;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+nav ul li {
+    display: inline-block;
+    padding: 30px 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+}
+/* ul li a::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: chartreuse;
+    transition: 0.3s;
+} */
+
+/* ul li a:hover::after{
+    width: 100%;
+} */
+nav ul li a:hover{
+
+    color: chartreuse;
+}
+.btn-Whatsapp{
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    padding: 7px 2rem;
+    border-radius: 30px;
+    transition: 0.8s;
+}
+.btn-Whatsapp:hover{
+    transform: scale(1.1);
+    color: chartreuse;
+}
+.hr{
+    border:darkred solid 1px;
+}
+.contente{
+    margin-left: 8%;
+    margin-right: 4%;
+    margin-top: 12%;
+}
+.contente .img img{
+    height: 300px;    
+    width: 300px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+.contente .img img:hover{
+    transform: rotatey(360deg);
+    transition: transform 2.8s ease;
+}
+.contente .text{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    line-height: 65px;
+    color: white;
+}
+.contente .text h4{
+    font-size: 23px;
+    color: white;
+    letter-spacing: 2px;
+}
+.contente .text h1{
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-family: math;
+}
+.contente .text h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.cv{
+    text-decoration: none;
+    color: white;
+    background-color: darkred;
+    padding: 7px 30px;
+    border-radius: 30px;
+    transition: 0.8s;
+}
+.cv:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color:chartreuse;
+    border:darkred 4px double ;
+}
+.icon a  {
+    
+    padding-left: 5px;
+    font-size: 30px;
+    text-decoration: none;
+}
+    
+.icon{  
+   position: absolute;
+   bottom: 5vh; 
+}
+.icon a i:hover{
+    color:chartreuse;
+    transform: rotatey(360deg);
+    transition: transform 2.8s ease;
+}
+#menu{
+    display: none;
+}
+.section-header {
+    text-align: center;
+    padding: 9px;
+    color: darkred;
+    border-bottom: 3px rgba(0, 89, 255, 0.596) solid;
+
+}
+#resirv:hover {
+    transform: rotatey(360deg);
+    transition: transform 2.8s ease;
+}
+
+/*----------------- responsiv --------------*/
+
+ @media screen  and (max-width:460px) {
+    .contente .img img{
+        display: none;
+    }
+     .logo{
+        font-size: 20px;
+        position: relative;
+        left: -13px;
+    } 
+    .btn-Whatsapp{
+        position: relative;
+        right: 0px;
+        padding: 3px;
+        font-size: 10px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 12%;
+        font-size: 25px;
+    }
+    nav ul li {
+        padding: 8px 30px;
+    }
+    .containr nav ul  {
+        position: absolute;
+        top: 18%;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    .containr nav ul li{
+        background-color: rgba(0, 0, 0, 0.123);
+        justify-content: space-around;
+
+    }
+    .containr nav ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 5px;
+        font-size: 8px;
+    }
+
+     .contente{
+        margin-left: 9%;
+        margin-right: 3%;
+        margin-top: 12%;
+    }
+    .contente .text{
+        width: 80%;
+        line-height: 50px;
+        margin-left: -10px;
+        position: absolute;
+        top: 20%;
+    }
+    .contente .text h4{
+        font-size: 8px;
+        letter-spacing: 0.7px;
+    }
+    .contente .text h1{
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+    .contente .text h3{
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .cv{
+        padding: 3px 5px;
+        border-radius: 30px;
+        transition: 0.8s;
+        font-size: 8px;
+    }
+    .icon a  {
+        padding-left: 2px;
+        font-size: 11px; 
+    } 
+    .icon{
+        position: absolute;
+        bottom: 50%;
+    }
+}
+
+@media screen and (min-width:460px) and (max-width:760px) {
+    .contente .img img{
+        display: none;
+    }
+     .logo{
+        font-size: 35px;
+        position: relative;
+        left: -30px;
+
+    } 
+    .btn-Whatsapp{
+        position: relative;
+        right: -30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 17%;
+        font-size: 30px;
+    }
+    nav ul li {
+        padding: 8px 33px;
+    }
+    .containr nav ul  {
+        position: absolute;
+        top: 23%;
+        right: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .containr nav ul li{
+        background-color: rgba(0, 0, 0, 0.233);
+        width: 70%;
+        justify-content: space-evenly;
+
+    }
+    .containr nav ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90px;
+        padding-right: 14px;
+        flex-direction: column;
+    }
+
+     .contente{
+        margin-left: 8%;
+        margin-right: 4%;
+        margin-top: 12%;
+    }
+    .contente .text{
+        width: 60%;
+        line-height: 50px;
+        margin-left: -10px;
+
+    }
+    .contente .text h4{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .contente .text h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .contente .text h3{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .cv{
+        padding: 7px 10px;
+        border-radius: 30px;
+        transition: 0.8s;
+        font-size: small;
+    }
+    .icon a  {
+        padding-left: 2px;
+        font-size: 18px; 
+    }  
+    .icon{
+        position: absolute;
+        bottom: 30vh;
+    }
+}    
+@media screen and (min-width:760px) and (max-width:960px) {
+    .contente .img img{
+        display: none;
+     }
+     nav{
+         width: 100%;
+     }
+     nav ul li {
+            padding: 20px 9px;
+     }
+     nav ul li a{
+        font-size: 15px;
+        padding: 2px 4px;
+
+     }
+     .btn-Whatsapp{
+         padding: 7px 25px;
+         border-radius: 30px;
+         transition: 0.8s;
+     }
+     .hr{
+         border:darkred solid 1px;
+     }
+     .logo{
+        font-size: 29px;
+        position: relative;
+        left: -4px;
+    }
+    .icon{  
+        position: absolute;
+        bottom: 8vh; 
+     }
+    
+}
+@media screen and (min-width:960px) and(max-width:1160px)  {
+    .icon{  
+        position: absolute;
+        top: 75%; 
+     }
+}  
+@media screen and (min-width:1160px)  {
+    .icon{  
+        position: absolute;
+        top: 80%; 
+     }
+} 
